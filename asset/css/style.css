@@ -1,0 +1,270 @@
+:root {
+  --color-brand1: #18d0f4;
+  --color-brand2: linear-gradient(to right, #18d0f4, #4698fe);
+  --color-sub1: #616eff;
+  --color-sub2: #23f59e;
+  --color-text1: #ffffff;
+  --color-text2: #e7f3fb;
+  --color-text3: #c1cbd6;
+  --color-text4: #919ead;
+  --color-text-option: #6f7780;
+  --color-line1: #5d646f;
+  --color-line2: #464c55;
+  --color-line3: #2d3238;
+  --color-bg1: #414658;
+  --color-bg2: #2a2e3d;
+  --color-bg3: #1e222a;
+  --color-bg4: #191c23;
+  --hanson: "Hanson";
+  --pretendard: "Pretendard-Regular";
+}
+header {
+  width: 100%;
+  height: 80px;
+  background: rgba(9, 12, 50, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 17px 0;
+}
+.header_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.nav {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  gap: 48px;
+}
+.nav a {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--color-text1);
+}
+.logo {
+  width: 66px;
+}
+.header_lt {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 41px;
+}
+.header_rt {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  gap: 24px;
+}
+.login_btn {
+  width: 96px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-brand2);
+  color: var(--color-text1);
+  border-radius: 50px;
+}
+.header_rt .lang {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  gap: 32px;
+}
+.header_rt .lang a {
+  color: var(--color-text1);
+}
+.header_rt .lang:after {
+  width: 2px;
+  height: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--color-text1);
+  content: "";
+}
+/* hero */
+.hero {
+  width: 100%;
+  height: 100vh;
+}
+
+/* sports */
+.sports_contents {
+  display: flex;
+  gap: 55px;
+}
+.sport_content {
+  flex: 1;
+}
+.sport_text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.sport_text p {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  color: var(--color-text1);
+}
+.sport_content {
+  display: flex;
+  gap: 46px;
+  align-items: center;
+}
+.tab {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+}
+.tab_btn span {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--color-line1);
+  font-family: var(--hanson);
+}
+.tab_btn.active span {
+  color: var(--color-text1);
+}
+.tab_content {
+  display: none;
+}
+.tab_content.active {
+  display: block;
+}
+.tab_imgs {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.tab_imgs div {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.tab_imgs div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* vid */
+.vid {
+  display: flex;
+  flex-direction: column;
+  height: 1300px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 1920px;
+}
+.vid:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  pointer-events: none;
+}
+.vid_bar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.vid .container {
+  overflow: visible;
+}
+.bar {
+  display: flex;
+  padding: 10px 0;
+  position: absolute;
+}
+
+.bar1 {
+  top: 0;
+  left: 0;
+  background-color: var(--color-sub1);
+  transform: translate(-25%, 0);
+  /* animation: animate 2s infinite linear */
+}
+
+.bar2 {
+  top: 0;
+  left: 0;
+  background-color: var(--color-sub2);
+  transform: translate(-25%, 0);
+  /* animation: animate 2s infinite linear */
+}
+
+.bar span {
+  color: #111;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+
+.bar img {
+  width: 68px;
+}
+
+.bar_wrap:nth-child(1) {
+  position: absolute;
+  top: 140px;
+  transform: rotate(-7deg);
+}
+.bar_wrap:nth-child(2) {
+  position: absolute;
+  bottom: 200px;
+  transform: rotate(5deg);
+}
+.bar1.active {
+  animation: animate 5s infinite linear;
+}
+
+.bar2.active {
+  animation: animate 5s infinite linear reverse;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-25%, 0);
+  }
+
+  100% {
+    transform: translate(-50%, 0);
+  }
+}
+.vid_video div {
+  width: 1150px;
+  height: 650px;
+  background-color: red;
+}
