@@ -1,51 +1,296 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="keywords" content="pixer, game, nft">
+    <meta name="description" content="pixer">
+    <!-- ogtag -->
+    <meta property="og:title" content="PIXER">
+    <meta property="og:description" content="pixer">
+    <meta property="og:url" content="https://new.pixer.club/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="PIXER">
+    <meta property="og:image" content="/asset/img/social_bg.jpg">
+    <meta property="og:locale" content="en_us">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://new.pixer.club/">
+    <link rel="icon" type="image/png" href="/asset/imgs/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/asset/css/reset.css">
     <link rel="stylesheet" href="/asset/css/common.css">
     <link rel="stylesheet" href="/asset/css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <title>PIXER</title>
 
 </head>
 
 <body>
+    <div class="loading">
+        <div class="loading_wrap">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 866 866" style="enable-background:new 0 0 866 866;" xml:space="preserve">
+                <style type="text/css">
+                    path {
+                        fill: rgba(24, 208, 244, 1);
+                    }
+                </style>
+                <path class="path-0" d="M616,398.8c-2.1-4.4-4.8-8.3-8.2-11.8c-25.6-21-51.5-41.5-78.1-61.1c-6.2-3.4-13.6-4.2-20.4-2
+           c-30.3,9.9-59.9,21.9-90.3,31.5c-10.2,2.3-17.6,11.2-18,21.6c-5.3,36.2-11,72.3-15.8,108.5c-0.6,5.9,1.3,11.7,5.3,16.1
+           c26.9,22.9,54.6,45.2,82.4,67c4.3,3.5,9.9,4.9,15.3,3.9c33-14,65.8-28.7,98.3-43.9c4.4-2.5,7.6-6.6,8.8-11.5
+           c7-38.1,13.3-76.4,20.5-118.6L616,398.8z" />
+                <path class="path-1" d="M512.5,238.2c0.2-9.2,1-18.4,2.4-27.5c2.2-12.4-2.6-18.8-13.5-24.4c-22.7-11.6-44.3-25.2-67.1-36.7
+           c-6.4-3.6-13.8-4.9-21-3.7c-27.4,7.6-54.3,16.5-81.1,25.7c-19.1,6.4-31.9,17.6-30.3,40.4c-0.2,8.7-1.3,17.3-3.2,25.8
+           c-5.7,42.3-5.7,42.5,30.8,62.6c20.8,11.5,41.1,30.2,62.7,31.9c21.6,1.7,46-12.7,68.9-20.6C510.2,294.5,510.2,294.5,512.5,238.2
+           L512.5,238.2z" />
+                <path class="path-2" d="M347.3,700c31.1-4.8,59.7-8.9,88.3-14.2c4.8-2.1,8.5-6.3,9.8-11.4c5.3-21.3,9.1-43,14.9-64.3
+           c2.8-10.5-0.6-15.8-8.1-21.8c-26.3-21-52-42.7-78.8-63c-6.3-4.5-14.1-6.5-21.8-5.8c-28.1,3.5-56.2,8.1-84.1,13.3
+           c-6.1,1.7-11.1,6.1-13.6,11.9c-6.5,21-11.7,42.4-15.8,64c-0.6,7,2,14,7,18.9c29.1,22.9,59,44.8,88.8,66.7c4.2,2.5,8.8,4.5,13.5,5.8
+           L347.3,700z" />
+                <path class="path-3" d="M669.5,582.1c21.5-11,42-20.6,61.6-31.5c5.6-3.8,9.7-9.4,11.9-15.8c19.2-50,25-104.2,16.7-157.2
+           c-1.4-8.9-42-38.2-51-36c-3.8,1.5-7.2,3.8-9.9,6.8c-14.8,13.1-30,25.6-43.8,39.7c-6.3,6.4-10.8,14.4-13,23.1
+           c-6.8,34.1-12.5,68.3-17.6,102.7c-1.1,7.1,0.5,14.4,4.4,20.5c12.1,16.2,26.3,30.9,40.5,47.3L669.5,582.1z" />
+                <path class="path-4" d="M276.2,192.1c-11.3-1.9-19.9-2.8-28.3-4.7c-14.9-3.4-25.8,0.5-36.8,12.2c-33.2,35.1-58.5,76.9-74.1,122.6
+           c-13.9,41.6-13.8,41.2,27.1,57.1c9.2,3.6,14.3,2.4,20.6-5.3c24.3-28.9,49.2-57.1,73.8-85.7c2.9-2.9,5-6.5,5.9-10.5
+           c4.2-28,7.8-56.1,11.8-85.8L276.2,192.1z" />
+                <path class="path-5" d="M120.8,393c0,13.2,0,24.7,0,36.1c0.8,60,18.5,118.6,51.2,168.9c7.2,11.2,33.6,15.8,36.8,6.3
+           c8.1-26.3,14.1-53.6,20.1-80.6c0.7-3-3-7.3-4.9-10.8c-13.2-25.1-28.7-49.3-39.1-75.5C173.1,408,148.3,401.9,120.8,393z" />
+                <path class="path-6" d="M440.9,102.6c-1.7,1.9-3.5,3.7-5.3,5.6c4.7,5.9,8.2,13.8,14.3,17.5c24.7,14.9,50.2,28.8,75.6,42.6
+           c5.2,2.4,10.8,3.9,16.4,4.4c28.6,3.6,57.2,7.3,85.9,10.2c5.5-0.4,11-1.7,16.1-3.7c-60.3-52-127.5-76.8-203.4-76.5H440.9z" />
+                <path class="path-7" d="M348.2,731.2c70.2,19.9,134.6,18.4,199.6-4.7C481.7,715.9,416.9,707.5,348.2,731.2z" />
+                <path class="path-8" d="M668.3,196.1l-6.7,1.9c1.3,5.5,3,11,5.3,16.2c15.8,29,32.6,57.2,46.7,86.9c7,14.9,17.9,20.1,34.1,25.7
+           C732.3,277.4,705,232.5,668.3,196.1L668.3,196.1z" />
+                <path class="bb-9" d="M616.5,691.8c29.3-12.2,88.8-72.7,95.1-100.9c-12.7,7.7-27.2,12.4-35.6,22.2c-22.1,26.3-41.5,54.5-59.5,78.8
+           V691.8z" />
+            </svg>
+
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" style="margin: auto; display: block; shape-rendering: auto; background: none;" width="280"
+                height="250" preserveAspectRatio="xMidYMid">
+                <style type="text/css">
+                    text {
+                        text-anchor: middle;
+                        font-size: 67px;
+                        opacity: 0;
+                    }
+                </style>
+                <g style="transform-origin: 140px 125px; transform: scale(0.8375);">
+                    <g transform="translate(140,125)">
+                        <g transform="translate(0,0)">
+                            <g class="path"
+                                style="transform: matrix(0.01, 0, 0, 0.01, 0, 0); transform-origin: -114.88px 9.0048px; animation: 1s linear 0s infinite running bounce-in-1cd99151-f8b0-40a7-a3c8-cf8043ed2f04;">
+                                <path
+                                    d="M37.76 9.20L37.76 9.20L37.76 9.20Q32.64 12.24 26.72 12.24L26.72 12.24L26.72 12.24Q20.80 12.24 17.68 10.36L17.68 10.36L17.68 10.36Q14.56 8.48 14.56 5.64L14.56 5.64L14.56 5.64Q14.56 2.80 16.84 1.08L16.84 1.08L16.84 1.08Q19.12-0.64 23.68-0.64L23.68-0.64L23.68-0.64Q29.92-0.64 34.88 4L34.88 4L34.88 4Q35.84 1.04 36.48-2.56L36.48-2.56L36.96-5.52L33.60-5.52L33.60-7.28L37.28-7.28L43.36-42L43.36-42Q43.76-44.96 44.48-46.80L44.48-46.80L44.48-46.80Q27.92-45.52 18.92-39.80L18.92-39.80L18.92-39.80Q9.92-34.08 9.92-24.80L9.92-24.80L9.92-24.80Q9.92-20.64 12.80-17.76L12.80-17.76L12.80-17.76Q14.80-15.84 18.08-14.84L18.08-14.84L18.08-14.84Q21.36-13.84 23.48-13.72L23.48-13.72L23.48-13.72Q25.60-13.60 25.76-13.76L25.76-13.76L25.76-12.08L25.76-12.08Q16.32-12.08 11.76-16.56L11.76-16.56L11.76-16.56Q8.40-19.68 8.40-24.80L8.40-24.80L8.40-24.80Q8.40-34.96 17.92-41.08L17.92-41.08L17.92-41.08Q27.44-47.20 45.12-48.40L45.12-48.40L45.12-48.40Q48.88-56.80 59.12-56.80L59.12-56.80L59.12-54.72L59.12-54.72Q57.12-54.48 56.36-53.12L56.36-53.12L56.36-53.12Q55.60-51.76 55.04-48.72L55.04-48.72L55.04-48.72Q61.68-48.64 66.44-47.08L66.44-47.08L66.44-47.08Q71.20-45.52 73.68-42.96L73.68-42.96L73.68-42.96Q78.40-38.08 78.40-31.52L78.40-31.52L78.40-31.52Q78.40-26.48 76.52-22.36L76.52-22.36L76.52-22.36Q74.64-18.24 71.76-15.60L71.76-15.60L71.76-15.60Q68.88-12.96 64.72-11.04L64.72-11.04L64.72-11.04Q57.84-7.76 48.16-6.40L48.16-6.40L48.16-6.24L48.16-6.24Q46.48 3.12 39.20 8.24L39.20 8.24L39.20 8.24Q42.48 11.20 46.40 12.88L46.40 12.88L46.40 12.88Q50.32 14.56 56.48 14.56L56.48 14.56L56.48 16.32L56.48 16.32Q49.84 16.32 45.56 14.44L45.56 14.44L45.56 14.44Q41.28 12.56 37.76 9.20zM76.32-31.52L76.32-31.52L76.32-31.52Q76.32-38.56 71-42.80L71-42.80L71-42.80Q65.68-47.04 54.88-47.20L54.88-47.20L54.88-47.20Q51.92-25.44 48.56-8.24L48.56-8.24L48.56-8.24Q76.32-12.24 76.32-31.52zM34.24 5.76L34.24 5.76Q31.68 3.36 29.36 2.12L29.36 2.12L29.36 2.12Q27.04 0.88 23.72 0.88L23.72 0.88L23.72 0.88Q20.40 0.88 18.44 2.12L18.44 2.12L18.44 2.12Q16.48 3.36 16.48 5.56L16.48 5.56L16.48 5.56Q16.48 7.76 19.04 9.24L19.04 9.24L19.04 9.24Q21.60 10.72 25.20 10.72L25.20 10.72L25.20 10.72Q28.80 10.72 30.92 9.68L30.92 9.68L30.92 9.68Q33.04 8.64 34.24 5.76L34.24 5.76"
+                                    fill="#616eff" stroke="none" stroke-width="none" transform="translate(-158.27996826171875,29.244801391601566)"
+                                    style="fill: rgb(97, 110, 255);" />
+                            </g>
+                            <g class="path"
+                                style="transform: matrix(0.01, 0, 0, 0.01, 0, 0); transform-origin: -51px 12.2848px; animation: 1s linear 0.132s infinite running bounce-in-1cd99151-f8b0-40a7-a3c8-cf8043ed2f04;">
+                                <path
+                                    d="M101.04-47.04L101.04-47.04L101.04-47.04Q93.44-47.04 89.64-42.88L89.64-42.88L89.64-42.88Q85.84-38.72 85.84-29.52L85.84-29.52L84-29.52L84-29.52Q84-48.72 100.56-48.72L100.56-48.72L100.56-48.72Q105.92-48.72 115.68-44.64L115.68-44.64L115.68-44.64Q125.44-40.56 130.56-40.56L130.56-40.56L130.56-38.72L130.56-38.72Q128.48-38.72 125.84-39.28L125.84-39.28L125.84-39.28Q125.28-39.12 123.88-37.48L123.88-37.48L123.88-37.48Q122.48-35.84 121.28-33.76L121.28-33.76L121.28-33.76Q117.92-27.68 115.36-18.24L115.36-18.24L124-18.24L123.84-16.80L114.96-16.80L114.96-16.80Q114.40-14.96 113.68-11.76L113.68-11.76L113.68-11.76Q110.40 2.56 106.76 8.68L106.76 8.68L106.76 8.68Q103.12 14.80 96.08 14.80L96.08 14.80L96.08 14.80Q91.84 14.80 90.24 13.84L90.24 13.84L91.04 12.16L91.04 12.16Q92.16 13.28 96.56 13.28L96.56 13.28L96.56 13.28Q97.12 13.28 98.40 13.12L98.40 13.12L104.08-11.52L104.08-11.52Q104.32-12.56 104.80-14.48L104.80-14.48L104.80-14.48Q105.28-16.40 105.36-16.80L105.36-16.80L96.64-16.80L96.80-18.24L105.68-18.24L105.68-18.24Q108.80-30 111.88-35.40L111.88-35.40L111.88-35.40Q114.96-40.80 119.12-41.36L119.12-41.36L119.12-41.36Q118.16-41.76 114.84-43.20L114.84-43.20L114.84-43.20Q111.52-44.64 110.08-45.20L110.08-45.20L110.08-45.20Q105.20-47.04 101.04-47.04"
+                                    fill="#616eff" stroke="none" stroke-width="none" transform="translate(-158.27996826171875,29.244801391601566)"
+                                    style="fill: rgb(24, 208, 244);" />
+                            </g>
+                            <g class="path"
+                                style="transform: matrix(0.01, 0, 0, 0.01, 0, 0); transform-origin: 10.6px 9.0048px; animation: 1s linear 0.264s infinite running bounce-in-1cd99151-f8b0-40a7-a3c8-cf8043ed2f04;">
+                                <path
+                                    d="M165.20-30.48L165.20-30.48L165.20-30.48Q165.20-40 162.60-43.52L162.60-43.52L162.60-43.52Q160-47.04 154.88-47.04L154.88-47.04L154.88-47.04Q148.08-47.04 142.32-41.92L142.32-41.92L142.32-41.92Q139.44-39.36 137.72-35.08L137.72-35.08L137.72-35.08Q136-30.80 136-26.16L136-26.16L136-26.16Q136-21.52 137.32-18.40L137.32-18.40L137.32-18.40Q138.64-15.28 140.48-13.68L140.48-13.68L140.48-13.68Q144.40-10.24 147.28-9.60L147.28-9.60L148.64-9.36L148.08-7.84L148.08-7.84Q146.72-8.24 145.80-8.52L145.80-8.52L145.80-8.52Q144.88-8.80 142.56-10.16L142.56-10.16L142.56-10.16Q140.24-11.52 138.60-13.24L138.60-13.24L138.60-13.24Q136.96-14.96 135.64-18.20L135.64-18.20L135.64-18.20Q134.32-21.44 134.32-25.44L134.32-25.44L134.32-25.44Q134.32-35.76 140.28-42.24L140.28-42.24L140.28-42.24Q146.24-48.72 155.76-48.72L155.76-48.72L155.76-48.72Q173.36-48.72 173.36-32L173.36-32L173.36-32Q173.36-26.32 172.72-22.28L172.72-22.28L172.72-22.28Q172.08-18.24 171.92-17.84L171.92-17.84L171.92-17.84Q175.60-28.48 181.48-38.56L181.48-38.56L181.48-38.56Q187.36-48.64 194.48-55.48L194.48-55.48L194.48-55.48Q201.60-62.32 207.52-62.32L207.52-62.32L207.52-62.32Q212-62.32 213.84-60.36L213.84-60.36L213.84-60.36Q215.68-58.40 215.68-54.56L215.68-54.56L213.84-54.56L213.84-54.56Q213.44-58.08 211.96-59.24L211.96-59.24L211.96-59.24Q210.48-60.40 207.52-60.40L207.52-60.40L207.52-60.40Q202.64-60.40 196.28-54.32L196.28-54.32L196.28-54.32Q189.92-48.24 184.72-39.92L184.72-39.92L184.72-39.92Q179.52-31.60 175.88-22.68L175.88-22.68L175.88-22.68Q172.24-13.76 172.24-8.24L172.24-8.24L172.24-8.24Q172.24 0 175 3.28L175 3.28L175 3.28Q177.76 6.56 182.44 6.56L182.44 6.56L182.44 6.56Q187.12 6.56 191.20 4.40L191.20 4.40L191.20 6.24L191.20 6.24Q186.96 8.24 182 8.24L182 8.24L182 8.24Q163.68 8.24 163.68-10L163.68-10L163.68-10Q163.68-13.84 164.32-17.68L164.32-17.68L164.32-17.68Q156.88 0.08 147.68 10.96L147.68 10.96L147.68 10.96Q138.48 21.84 130.24 21.84L130.24 21.84L130.24 21.84Q125.76 21.84 123.92 19.88L123.92 19.88L123.92 19.88Q122.08 17.92 122.08 14.08L122.08 14.08L123.92 14.08L123.92 14.08Q124.32 17.60 125.80 18.76L125.80 18.76L125.80 18.76Q127.28 19.92 130.24 19.92L130.24 19.92L130.24 19.92Q136.96 19.92 145.40 10.56L145.40 10.56L145.40 10.56Q153.84 1.20 159.52-10.80L159.52-10.80L159.52-10.80Q165.20-22.80 165.20-30.48"
+                                    fill="#616eff" stroke="none" stroke-width="none" transform="translate(-158.27996826171875,29.244801391601566)"
+                                    style="fill: rgb(70, 152, 254);" />
+                            </g>
+                            <g class="path"
+                                style="transform: matrix(0.01, 0, 0, 0.01, 0, 0); transform-origin: 56.56px 7.0848px; animation: 1s linear 0.396s infinite running bounce-in-1cd99151-f8b0-40a7-a3c8-cf8043ed2f04;">
+                                <path
+                                    d="M210.56-24.48L210.56-24.48L210.56-24.48Q214.72-25.84 220.24-25.84L220.24-25.84L220.24-25.84Q225.76-25.84 225.76-22.64L225.76-22.64L225.76-22.64Q225.76-20.72 223.68-19.48L223.68-19.48L223.68-19.48Q221.60-18.24 217.68-18.24L217.68-18.24L217.68-18.24Q211.52-18.24 207.76-21.20L207.76-21.20L207.76-21.20Q206.32-19.68 205.52-18.64L205.52-18.64L205.52-18.64Q204.72-17.60 203.72-14.64L203.72-14.64L203.72-14.64Q202.72-11.68 202.72-7.52L202.72-7.52L202.72-7.52Q202.72-3.36 206.24-0.28L206.24-0.28L206.24-0.28Q209.76 2.80 213.56 2.80L213.56 2.80L213.56 2.80Q217.36 2.80 220.64 1.36L220.64 1.36L220.64 1.36Q223.92-0.08 225.84-2L225.84-2L225.84-2Q227.76-3.92 229.20-6.24L229.20-6.24L229.20-6.24Q231.20-9.20 231.84-11.44L231.84-11.44L233.44-11.04L233.44-11.04Q233.44-10.80 232.84-9.36L232.84-9.36L232.84-9.36Q232.24-7.92 230.64-5.56L230.64-5.56L230.64-5.56Q229.04-3.20 226.80-1L226.80-1L226.80-1Q224.56 1.20 220.64 2.80L220.64 2.80L220.64 2.80Q216.72 4.40 212.08 4.40L212.08 4.40L212.08 4.40Q203.52 4.40 198.72 0.76L198.72 0.76L198.72 0.76Q193.92-2.88 193.92-8.72L193.92-8.72L193.92-8.72Q193.92-14.56 197.56-18L197.56-18L197.56-18Q201.20-21.44 206.16-22.80L206.16-22.80L206.16-22.80Q202.56-27.20 202.56-33.24L202.56-33.24L202.56-33.24Q202.56-39.28 207.40-44L207.40-44L207.40-44Q212.24-48.72 221.36-48.72L221.36-48.72L221.36-48.72Q228.32-48.72 232.04-46.28L232.04-46.28L232.04-46.28Q235.76-43.84 235.76-40.20L235.76-40.20L235.76-40.20Q235.76-36.56 233.88-32.76L233.88-32.76L233.88-32.76Q232-28.96 231.76-26.72L231.76-26.72L230.08-26.72L230.08-26.72Q230.32-29.12 232.20-32.88L232.20-32.88L232.20-32.88Q234.08-36.64 234.08-39.88L234.08-39.88L234.08-39.88Q234.08-43.12 230.68-45.20L230.68-45.20L230.68-45.20Q227.28-47.28 222.04-47.28L222.04-47.28L222.04-47.28Q216.80-47.28 213.12-43.24L213.12-43.24L213.12-43.24Q209.44-39.20 209.44-30.88L209.44-30.88L209.44-30.88Q209.44-26.40 210.56-24.48zM211.76-22.16L211.76-22.16L211.76-22.16Q212.16-21.60 213.80-20.64L213.80-20.64L213.80-20.64Q215.44-19.68 218.16-19.68L218.16-19.68L218.16-19.68Q220.88-19.68 222.52-20.52L222.52-20.52L222.52-20.52Q224.16-21.36 224.16-22.48L224.16-22.48L224.16-22.48Q224.16-24.40 219.84-24.40L219.84-24.40L219.84-24.40Q215.52-24.40 211.20-23.12L211.20-23.12L211.20-23.12Q211.36-22.72 211.76-22.16"
+                                    fill="#616eff" stroke="none" stroke-width="none" transform="translate(-158.27996826171875,29.244801391601566)"
+                                    style="fill: rgb(111, 119, 128);" />
+                            </g>
+                            <g class="path"
+                                style="transform: matrix(0.01, 0, 0, 0.01, 0, 0); transform-origin: 124.36px 12.8048px; animation: 1s linear 0.528s infinite running bounce-in-1cd99151-f8b0-40a7-a3c8-cf8043ed2f04;">
+                                <path
+                                    d="M258.40 12.24L258.40 12.24L258.40 10.72L258.40 10.72Q263.36 10.48 265.12 8.16L265.12 8.16L265.12 8.16Q266.88 5.84 268.40-2.56L268.40-2.56L276.08-46.80L276.08-46.80Q259.68-45.44 250.76-39.72L250.76-39.72L250.76-39.72Q241.84-34 241.84-24.80L241.84-24.80L241.84-24.80Q241.84-20.64 244.72-17.76L244.72-17.76L244.72-17.76Q246.72-15.84 250-14.84L250-14.84L250-14.84Q253.28-13.84 255.40-13.72L255.40-13.72L255.40-13.72Q257.52-13.60 257.68-13.76L257.68-13.76L257.68-12.08L257.68-12.08Q248.24-12.08 243.68-16.56L243.68-16.56L243.68-16.56Q240.32-19.68 240.32-24.80L240.32-24.80L240.32-24.80Q240.32-36.24 252.28-42.48L252.28-42.48L252.28-42.48Q264.24-48.72 286.08-48.72L286.08-48.72L286.08-48.72Q299.68-48.72 305.40-45.04L305.40-45.04L305.40-45.04Q311.12-41.36 311.12-35L311.12-35L311.12-35Q311.12-28.64 306.76-24.08L306.76-24.08L306.76-24.08Q302.40-19.52 295.28-17.04L295.28-17.04L295.28-17.04Q305.68 4.56 308.64 8.92L308.64 8.92L308.64 8.92Q311.60 13.28 315.76 13.28L315.76 13.28L315.76 13.28Q318.24 13.28 320.20 11.72L320.20 11.72L320.20 11.72Q322.16 10.16 322.96 7.52L322.96 7.52L324.96 7.52L324.96 7.52Q322.40 15.84 312.40 15.84L312.40 15.84L312.40 15.84Q306.08 15.84 301.96 12.84L301.96 12.84L301.96 12.84Q297.84 9.84 295.04 3.76L295.04 3.76L286.40-14.96L286.40-14.96Q283.20-14.64 281.68-14.64L281.68-14.64L281.68-14.64Q281.44-13.44 280.96-10.56L280.96-10.56L280.96-10.56Q280.48-7.68 280.16-6.24L280.16-6.24L280.16-6.24Q278.56 2.40 272.12 7.32L272.12 7.32L272.12 7.32Q265.68 12.24 258.40 12.24zM309.04-34.72L309.04-34.72L309.04-34.72Q309.04-46.96 286.80-47.20L286.80-47.20L282-16.40L282-16.40Q293.36-16.72 301.20-22.12L301.20-22.12L301.20-22.12Q309.04-27.52 309.04-34.72"
+                                    fill="#616eff" stroke="none" stroke-width="none" transform="translate(-158.27996826171875,29.244801391601566)"
+                                    style="fill: rgb(255, 112, 142);" />
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <style id="bounce-in-1cd99151-f8b0-40a7-a3c8-cf8043ed2f04" data-anikit="">
+                    @keyframes bounce-in-1cd99151-f8b0-40a7-a3c8-cf8043ed2f04 {
+                        0% {
+                            animation-timing-function: cubic-bezier(0.0383, 0.3388, 0.0421, 0.6652);
+                            transform: matrix(0.01, 0, 0, 0.01, 0, 0);
+                            opacity: 1;
+                        }
+
+                        4.7% {
+                            animation-timing-function: cubic-bezier(0.3296, 0.3336, 0.5772, 0.6672);
+                            transform: matrix(0.556, 0, 0, 0.556, 0, 0);
+                            opacity: 1;
+                        }
+
+                        8.4% {
+                            animation-timing-function: cubic-bezier(0.0781, 0.1617, 0.0874, 0.9301);
+                            transform: matrix(0.979, 0, 0, 0.979, 0, 0);
+                            opacity: 1;
+                        }
+
+                        12.4% {
+                            animation-timing-function: cubic-bezier(0.8341, 0.1496, 0.8634, 0.7673);
+                            transform: matrix(1.153, 0, 0, 1.153, 0, 0);
+                            opacity: 1;
+                        }
+
+                        16.3% {
+                            animation-timing-function: cubic-bezier(0.3264, 0.3332, 0.5758, 0.6695);
+                            transform: matrix(1.008, 0, 0, 1.008, 0, 0);
+                            opacity: 1;
+                        }
+
+                        21.2% {
+                            animation-timing-function: cubic-bezier(0.0921, 0.1883, 0.3277, 1);
+                            transform: matrix(0.704, 0, 0, 0.704, 0, 0);
+                            opacity: 1;
+                        }
+
+                        24.5% {
+                            animation-timing-function: cubic-bezier(0.6905, 0.0944, 0.8759, 0.7624);
+                            transform: matrix(0.626, 0, 0, 0.626, 0, 0);
+                            opacity: 1;
+                        }
+
+                        27.7% {
+                            animation-timing-function: cubic-bezier(0.3688, 0.332, 0.624, 0.6684);
+                            transform: matrix(0.704, 0, 0, 0.704, 0, 0);
+                            opacity: 1;
+                        }
+
+                        32.6% {
+                            animation-timing-function: cubic-bezier(0.1368, 0.2364, 0.2451, 0.9049);
+                            transform: matrix(0.958, 0, 0, 0.958, 0, 0);
+                            opacity: 1;
+                        }
+
+                        37.4% {
+                            animation-timing-function: cubic-bezier(0.5936, 0.0846, 0.3495, 1);
+                            transform: matrix(1.085, 0, 0, 1.085, 0, 0);
+                            opacity: 1;
+                        }
+
+                        49.5% {
+                            animation-timing-function: cubic-bezier(0.5522, 0.0981, 0.3807, 1);
+                            transform: matrix(0.802, 0, 0, 0.802, 0, 0);
+                            opacity: 1;
+                        }
+
+                        62.4% {
+                            animation-timing-function: cubic-bezier(0.4497, 0.1349, 0.4911, 1);
+                            transform: matrix(1.044, 0, 0, 1.044, 0, 0);
+                            opacity: 1;
+                        }
+
+                        74.1% {
+                            animation-timing-function: cubic-bezier(0.429, 0, 0.5239, 1);
+                            transform: matrix(0.914, 0, 0, 0.914, 0, 0);
+                            opacity: 1;
+                        }
+
+                        87% {
+                            animation-timing-function: cubic-bezier(0.3501, 0, 0.6422, 1);
+                            transform: matrix(1.013, 0, 0, 1.013, 0, 0);
+                            opacity: 1;
+                        }
+
+                        95.8% {
+                            animation-timing-function: cubic-bezier(0.3653, 0, 0.6776, 1);
+                            transform: matrix(0.992, 0, 0, 0.992, 0, 0);
+                            opacity: 1;
+                        }
+
+                        100% {
+                            transform: matrix(1, 0, 0, 1, 0, 0);
+                            opacity: 1;
+                        }
+                    }
+                </style>
+            </svg> -->
+        </div>
+    </div>
     <div class="wrap">
         <header>
             <div class="container">
                 <div class="header_wrap">
                     <div class="header_lt">
-                        <div class="logo">
+                        <a href="/" class="logo">
                             <img src="/asset/imgs/logo.png" alt="logo">
-                        </div>
-                        <ul class="nav">
-                            <li><a href="">START</a></li>
-                            <li><a href="">ABOUT US</a></li>
-                            <li><a href="">NFT</a></li>
-                            <li><a href="">TOKENS</a></li>
-                            <li><a href="">TEAM</a></li>
-                            <li><a href="">ROADMAP</a></li>
-                            <li><a href="">PARTNERS</a></li>
-                        </ul>
+                        </a>
+
                     </div>
                     <div class="header_rt">
-                        <a href="" class="login_btn">LOGIN</a>
-                        <ul class="lang">
-                            <li><a href="">KR</a></li>
-                            <li><a href="">EN</a></li>
+                        <ul class="nav">
+                            <li><a onclick="scrollToSection(event,'start')" href="#">START</a></li>
+                            <li><a onclick="scrollToSection(event,'about')" href="#">ABOUT US</a></li>
+                            <li><a onclick="scrollToSection(event,'nft')" href="#">NFT</a></li>
+                            <li><a onclick="scrollToSection(event,'tokens')" href="#">TOKENS</a></li>
+                            <li><a onclick="scrollToSection(event,'team')" href="#">TEAM</a></li>
+                            <li><a onclick="scrollToSection(event,'roadmap')" href="#">ROADMAP</a></li>
+                            <li><a onclick="scrollToSection(event,'partners')" href="#">PARTNERS</a></li>
+                            <li><a onclick="scrollToSection(event,'exchanges')" href="#">EXCHANGES</a></li>
                         </ul>
+                        <a href="https://pixer-eternity.gitbook.io/pixer-eternity/" rel="nofollow noopener noreferrer" target="_blank"
+                            class="login_btn">White Paper</a>
+                        <a onclick="scrollToSection(event,'appDownload')" class="app_btn" href="#" rel="nofollow noopener noreferrer"
+                            class="login_btn">APP</a>
+                    </div>
+                    <div class="header_mob">
+                        <div class=""></div>
+                        <div class=""></div>
+                        <div class=""></div>
                     </div>
                 </div>
             </div>
         </header>
+        <div class="menu">
+            <div class="menu_overlay menu_overlay_1">
+                <div class="menu_overlay menu_overlay_2">
+                    <div class="menu_wrap">
+                        <ul class="mob_nav">
+                            <li><a onclick="scrollToSection(event,'start')" href="#">START</a></li>
+                            <li><a onclick="scrollToSection(event,'about')" href="#">ABOUT US</a></li>
+                            <li><a onclick="scrollToSection(event,'nft')" href="#">NFT</a></li>
+                            <li><a onclick="scrollToSection(event,'tokens')" href="#">TOKENS</a></li>
+                            <li><a onclick="scrollToSection(event,'team')" href="#">TEAM</a></li>
+                            <li><a onclick="scrollToSection(event,'roadmap')" href="#">ROADMAP</a></li>
+                            <li><a onclick="scrollToSection(event,'partners')" href="#">PARTNERS</a></li>
+                            <li><a onclick="scrollToSection(event,'exchanges')" href="#">EXCHANGES</a></li>
+                        </ul>
+                        <div class="mob_bt">
+                            <a href="https://pixer-eternity.gitbook.io/pixer-eternity/" rel="nofollow noopener noreferrer" target="_blank"
+                                class="login_btn">White Paper</a>
+                            <a onclick="scrollToSection(event,'appDownload')" class="app_btn mob_app_btn" href="#" rel="nofollow noopener noreferrer"
+                                class="login_btn">APP</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <main>
-            <section class="hero"></section>
+            <section class="hero" id="start">
+                <h2 data-splitting>Sports Web3.0 Platform </h2>
+                <span class="hero_sub" data-splitting>
+                    Voting / Burning / Playing / Connecting</span>
+                <video muted autoplay playsinline loop poster="/asset/imgs/main_thum.jpg">
+                    <source src="https://pixer.sgp1.cdn.digitaloceanspaces.com/pixer_main.mp4">
+                </video>
+            </section>
             <section class="sports">
                 <div class="container">
                     <div class="common_wrap sports_wrap">
-                        <div class="sports_title common_title">
+                        <div class="sports_title common_title title-animation">
                             <h3>SPORTS LEGEND :</h3>
                             <h3>BRAVE FORCE</h3>
                             <p class="text-line">
@@ -54,16 +299,50 @@
                                 <span>BRAVE FORCE</span>
                                 <span>BRAVE FORCE</span>
                             </p>
-
                         </div>
                         <div class="sports_contents">
-                            <div class="sport_text">
-                                <p>Once upon a time, there was a small tribe of lions living deep in the forests of the African savannah. These small
-                                    lions lived peacefully in harmony with nature, and they were a tribe full of love, courage, and mutual support.
-                                </p>
-                                <p>One day, by chance, they discovered a powerful magical ore called the "Lumestone." This ore shimmered with
-                                    enchanting and vibrant colors, and the lion tribe sensed the hidden power and future possibilities within it. The
-                                    Lumestone became a symbol of opportunity and success in the world of sports.</p>
+                            <div class="sport_text_wrap">
+                                <div class="sport_text active" data-text="0">
+                                    <p>Once upon a time, there was a small tribe of lions living deep in the
+                                        forests of the African Savannah. These small lions lived peacefully
+                                        in harmony with nature, and they were a tribe full of love, courage,
+                                        and mutual support.
+                                    </p>
+                                    <p>One day, by chance, they discovered a powerful magical ore called
+                                        the "Lumestone". This are shimmered with enchanting and vibrant
+                                        colors, and the lion tribe sensed the hidden power and future
+                                        possibilities within it. The Lumestone became a symbol of
+                                        opportunity and success in the world of sports.</p>
+                                </div>
+                                <div class="sport_text" data-text="1">
+                                    <p>The Lumestone united the tribe and bestowed upon them the
+                                        power to venture into the world of sports. Each small lion
+                                        discovered exceptional talents in different disciplines, infusing
+                                        their passion and enthusiasm into various sports such as
+                                        soccer, baseball, and golf.
+
+                                    </p>
+                                    <p>Empowered by the force of sports, they became known as
+                                        "BraveForce." BraveForce symbolized the lions' courage and
+                                        strength, and the sports competitions they participated in were
+                                        always stages filled with passion and challenges.</p>
+                                </div>
+                                <div class="sport_text" data-text="2">
+                                    <p>Each member of BraveForce possessed unique abilities and
+                                        personalities. The soccer-playing character dominated opposing
+                                        teams with agility and speed, while the baseball-playing character
+                                        showcased precise hits and swift running. The golf-playing
+                                        character executed accurate swings and strategic shots to
+                                        impressively land the ball on the green.
+
+                                    </p>
+                                    <p>BraveForce came to life as NFT characters on the PIXER platform.
+                                        They are magnificent lions challenging themselves toward victory
+                                        in colorful sports competitions. Each NFT character has its own
+                                        distinctive personality and traits, allowing collectors to enjoy and
+                                        possess their stories and achievements in the games.
+                                    </p>
+                                </div>
                             </div>
                             <div class="sport_content">
                                 <div class="tab">
@@ -71,56 +350,60 @@
                                     <div class="tab_btn" data-tab="1"><span>02</span></div>
                                     <div class="tab_btn" data-tab="2"><span>03</span></div>
                                 </div>
-                                <div class="tab_contents">
-                                    <div class="tab_content active" data-tab="0">
-                                        <div class="tab_imgs">
+                                <div class="sports_tab_contents">
+                                    <div class="sports_tab_content tab_content active" data-content="0">
+                                        <div class="sports_inner">
                                             <div>
-                                                <img src="" alt="">
+                                                <img src="/asset/imgs/sports_1-1.png" alt="sports_1">
                                             </div>
                                             <div>
-                                                <img src="" alt="">
+                                                <img src="/asset/imgs/sports_1-2.png" alt="sports_2">
                                             </div>
                                             <div>
-                                                <img src="" alt="">
+                                                <img src="/asset/imgs/sports_1-3.png" alt="sports_3">
                                             </div>
                                             <div>
-                                                <img src="" alt="">
+                                                <img src="/asset/imgs/sports_1-4.jpeg" alt="sports_4">
                                             </div>
+
                                         </div>
                                     </div>
-                                    <div class="tab_content" data-tab="1">
-                                        <div class="16px">
+                                    <div class="sports_tab_content tab_content" data-content="1">
+                                        <div class="sports_inner">
                                             <div>
-                                                <img src="" alt="">
+                                                <img src="/asset/imgs/sports_2-1.jpg" alt="sports_4">
                                             </div>
                                             <div>
-                                                <img src="" alt="">
+                                                <img src="/asset/imgs/sports_2-2.jpeg" alt="sports_2">
                                             </div>
                                             <div>
-                                                <img src="" alt="">
+                                                <img src="/asset/imgs/sports_2-3.jpeg" alt="sports_3">
                                             </div>
                                             <div>
-                                                <img src="" alt="">
+                                                <img src="/asset/imgs/sports_2-4.png" alt="sports_1">
                                             </div>
+
                                         </div>
 
                                     </div>
-                                    <div class="tab_content" data-tab="2">
-                                        <div class="tab_imgs">
+                                    <div class="sports_tab_content tab_content" data-content="2">
+                                        <div class="sports_inner">
                                             <div>
-                                                <img src="" alt="">
+                                                <img src="/asset/imgs/sports_3-1.jpeg" alt="sports_3">
                                             </div>
                                             <div>
-                                                <img src="" alt="">
+                                                <img src="/asset/imgs/sports_3-2.png" alt="sports_2">
                                             </div>
                                             <div>
-                                                <img src="" alt="">
+                                                <img src="/asset/imgs/sports_3-3.png" alt="sports_3">
                                             </div>
                                             <div>
-                                                <img src="" alt="">
+                                                <img src="/asset/imgs/sports_3-4.jpeg" alt="sports_4">
                                             </div>
+
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
@@ -129,156 +412,870 @@
             </section>
             <section class="vid">
                 <div class="container">
+                    <div class="vid_bg">
+                        <img src="/asset/imgs/vid_bg.png" alt="vid_bg">
+                    </div>
                     <div class="vid_wrap common_wrap">
                         <div class="vid_bar">
-                            <div class="bar_wrap" style="--d:25;--y:200">
-                                <ul class="bar bar1">
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                </ul>
+                            <div class="bar_wrap " style="--d:25;--y:200">
+                                <div class="bar_inner bar_inner1">
+                                    <ul class="bar bar1">
+                                        <li>
+                                            <img src="/asset/imgs/green_arrow.png" alt="green_arrow">
+                                        </li>
+                                        <li>
+                                            <img src="/asset/imgs/green_arrow.png" alt="green_arrow">
+                                        </li>
+                                        <li>
+                                            <img src="/asset/imgs/green_arrow.png" alt="green_arrow">
+                                        </li>
+                                        <li>
+                                            <img src="/asset/imgs/green_arrow.png" alt="green_arrow">
+                                        </li>
+                                        <li>
+                                            <img src="/asset/imgs/green_arrow.png" alt="green_arrow">
+                                        </li>
+                                        <li>
+                                            <img src="/asset/imgs/green_arrow.png" alt="green_arrow">
+                                        </li>
+                                    </ul>
+                                    <ul class="bar bar1">
+                                        <li>
+                                            <img src="/asset/imgs/green_arrow.png" alt="green_arrow">
+                                        </li>
+                                        <li>
+                                            <img src="/asset/imgs/green_arrow.png" alt="green_arrow">
+                                        </li>
+                                        <li>
+                                            <img src="/asset/imgs/green_arrow.png" alt="green_arrow">
+                                        </li>
+                                        <li>
+                                            <img src="/asset/imgs/green_arrow.png" alt="green_arrow">
+                                        </li>
+                                        <li>
+                                            <img src="/asset/imgs/green_arrow.png" alt="green_arrow">
+                                        </li>
+                                        <li>
+                                            <img src="/asset/imgs/green_arrow.png" alt="green_arrow">
+                                        </li>
+                                    </ul>
+                                    <ul class="bar bar1">
+                                        <li>
+                                            <img src="/asset/imgs/green_arrow.png" alt="green_arrow">
+                                        </li>
+                                        <li>
+                                            <img src="/asset/imgs/green_arrow.png" alt="green_arrow">
+                                        </li>
+                                        <li>
+                                            <img src="/asset/imgs/green_arrow.png" alt="green_arrow">
+                                        </li>
+                                        <li>
+                                            <img src="/asset/imgs/green_arrow.png" alt="green_arrow">
+                                        </li>
+                                        <li>
+                                            <img src="/asset/imgs/green_arrow.png" alt="green_arrow">
+                                        </li>
+                                        <li>
+                                            <img src="/asset/imgs/green_arrow.png" alt="green_arrow">
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="bar_wrap" style="--d:25;--y:200">
-                                <ul class="bar bar2">
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                    <li><span>PIXER</span></li>
-                                    <li><img src="/asset/imgs/ic_twotone-double-arrow.png" alt=""></li>
-                                </ul>
+                            <div class="bar_wrap " style="--d:25;--y:200">
+                                <div class="bar_inner bar_inner2">
+                                    <ul class="bar bar2">
+                                        <li>
+                                            <img src="/asset/imgs/purple_arrow.png" alt="purple_arrow">
+                                        </li>
+                                        <li>
+                                            <img src="/asset/imgs/purple_arrow.png" alt="purple_arrow">
+                                        </li>
+                                        <li>
+                                            <img src="/asset/imgs/purple_arrow.png" alt="purple_arrow">
+                                        </li>
+                                        <li>
+                                            <img src="/asset/imgs/purple_arrow.png" alt="purple_arrow">
+                                        </li>
+                                        <li>
+                                            <img src="/asset/imgs/purple_arrow.png" alt="purple_arrow">
+                                        </li>
+                                        <li>
+                                            <img src="/asset/imgs/purple_arrow.png" alt="purple_arrow">
+                                        </li>
+                                    </ul>
+                                    <ul class="bar bar2">
+                                        <li>
+                                            <img src="/asset/imgs/purple_arrow.png" alt="purple_arrow">
+                                        </li>
+                                        <li>
+                                            <img src="/asset/imgs/purple_arrow.png" alt="purple_arrow">
+                                        </li>
+                                        <li>
+                                            <img src="/asset/imgs/purple_arrow.png" alt="purple_arrow">
+                                        </li>
+                                        <li>
+                                            <img src="/asset/imgs/purple_arrow.png" alt="purple_arrow">
+                                        </li>
+                                        <li>
+                                            <img src="/asset/imgs/purple_arrow.png" alt="purple_arrow">
+                                        </li>
+                                        <li>
+                                            <img src="/asset/imgs/purple_arrow.png" alt="purple_arrow">
+                                        </li>
+                                    </ul>
+                                    <ul class="bar bar2">
+                                        <li>
+                                            <img src="/asset/imgs/purple_arrow.png" alt="purple_arrow">
+                                        </li>
+                                        <li>
+                                            <img src="/asset/imgs/purple_arrow.png" alt="purple_arrow">
+                                        </li>
+                                        <li>
+                                            <img src="/asset/imgs/purple_arrow.png" alt="purple_arrow">
+                                        </li>
+                                        <li>
+                                            <img src="/asset/imgs/purple_arrow.png" alt="purple_arrow">
+                                        </li>
+                                        <li>
+                                            <img src="/asset/imgs/purple_arrow.png" alt="purple_arrow">
+                                        </li>
+                                        <li>
+                                            <img src="/asset/imgs/purple_arrow.png" alt="purple_arrow">
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <div class="vid_video">
-                            <div></div>
-                            <!-- <video playsinline poster="">
-                            <source src="">
-                        </video> -->
+                            <!-- <div class="play_btn"><img src="/asset/imgs/playBtn.svg" alt="재생버튼"></div> -->
+                            <video autoplay loop playsinline muted poster="/asset/imgs/gameVid_thum.jpg">
+                                <source src="https://pixer.sgp1.cdn.digitaloceanspaces.com/pixer_sample.mp4">
+                            </video>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- <section>
-                <h3 data-text="BRAVE CHARACTER">
-                    <span>BRAVE CHARACTER</span>
-                    <span>BRAVE CHARACTER</span>
-                    <span>BRAVE CHARACTER</span>
-                    <span>BRAVE CHARACTER</span>
-                </h3>
-            </section> -->
+            <section class="about" id="about">
+                <div class="container">
+                    <div class="common_wrap about_wrap">
+                        <div class="about_title common_title">
+                            <div class="head">
+                                <h3>ABOUT</h3>
+                                <h3>US</h3>
+                            </div>
+                            <p class="text-line">
+                                <span>ABOUT US</span>
+                                <span>ABOUT US</span>
+                                <span>ABOUT US</span>
+                                <span>ABOUT US</span>
+                            </p>
+                        </div>
+                        <div class="about_text">
+                            <p>
+                                <span class="text-gradient">PIXER </span><img src="/asset/imgs/icons/start-purple.png" alt="start-purple"> is a
+                                S2E(Sports To Earn) platform. <br>
+                                It offers <img src="/asset/imgs/icons/start-green.png" alt="start-green"><span class="text-green">various activities
+                                </span><img src="/asset/imgs/icons/start-green.png" alt="start-green"> through <br>
+                                which users can <span class="text-purple">generate revenue. </span> <img src="/asset/imgs/icons/start-purple.png"
+                                    alt="start-purple">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about_contents">
+                        <div class="about_tab">
+                            <div class="about_tab_btn active " style="--r:0;--ry:0" data-contents-tab="0">
+                                <div class="lines">
+                                    <img src="/asset/imgs/icons/line-light.png" alt="line">
+                                    <img src="/asset/imgs/icons/line.png" alt="line">
+                                </div>
+                                <div class="sub sub_1 " style="--r:0">
+                                    <div class="circle"></div>
+                                    <span>Voting Sports Game</span>
+                                </div>
+                            </div>
+                            <div class="about_tab_btn " style="--r:1;--ry:0" data-contents-tab="1">
+                                <div class="lines">
+                                    <img src="/asset/imgs/icons/line-light.png" alt="line">
+                                    <img src="/asset/imgs/icons/line.png" alt="line">
+                                </div>
+                                <div class="sub sub_2" style="--r:3">
+                                    <div class="circle"></div>
+                                    <span>Burning Calorie</span>
+                                </div>
+                            </div>
+                            <div class="about_tab_btn " style="--r:2; --ry:1;" data-contents-tab="2">
+                                <div class="lines">
+                                    <img src="/asset/imgs/icons/line-light.png" alt="line">
+                                    <img src="/asset/imgs/icons/line.png" alt="line">
+                                </div>
+                                <div class="sub sub_4" style="--r:2">
+                                    <div class="circle"></div>
+                                    <span>Playing Sports Game </span>
+                                </div>
+                            </div>
+                            <div class="about_tab_btn" style="--r:3; --ry:-1; " data-contents-tab="3">
+                                <div class="lines">
+                                    <img src="/asset/imgs/icons/line-light.png" alt="line">
+                                    <img src="/asset/imgs/icons/line.png" alt="line">
+                                </div>
+                                <div class="sub sub_3" style="--r:1">
+                                    <div class="circle"></div>
+                                    <span>Connecting <br>
+                                        Sports Metaverse</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about_tab_contents tab_contents">
+                            <div class="about_tab_content tab_content active" data-content-inner="0">
+                                <div class="about_tab_img">
+                                    <img src="/asset/imgs/about/voting.png" alt="voting">
+                                </div>
+                                <div class="about_tab_text">
+                                    <h3>Voting Sports Game </h3>
+                                    <p>Users can predict and enjoy sports game results while earning profits. By participating in voting, they can
+                                        leverage their sports knowledge and make accurate predictions to win rewards.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="about_tab_content tab_content" data-content-inner="1">
+                                <div class="about_tab_img">
+                                    <img src="/asset/imgs/about/burnning.png" alt="burnning">
+                                </div>
+                                <div class="about_tab_text">
+                                    <h3>Burning Calorie
+                                    </h3>
+                                    <p>This feature allows users to earn profits by engaging in active calorie-burning activities. By tracking their
+                                        physical activities and achieving fitness goals, users can earn rewards based on their performance.</p>
+                                </div>
+                            </div>
+                            <div class="about_tab_content tab_content " data-content-inner="2">
+                                <div class="about_tab_img">
+                                    <img src="/asset/imgs/about/playing.png" alt="playing">
+                                </div>
+                                <div class="about_tab_text">
+                                    <h3>Playing Sports Game
+                                    </h3>
+                                    <p>Users can access a wide range of simple yet diverse sports games designed to provide entertainment and revenue
+                                        opportunities. Users can compete against others, improve their skills, and earn rewards based on their
+                                        performance.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="about_tab_content tab_content" data-content-inner="3">
+                                <div class="about_tab_img">
+                                    <img src="/asset/imgs/about/connecting.png" alt="connecting">
+                                </div>
+                                <div class="about_tab_text">
+                                    <h3>Connecting<br>
+                                        Sports Metaverse
+                                    </h3>
+                                    <p>PIXER provides a metaverse that bridges offline and online sports experiences. Users can immerse themselves in
+                                        a virtual world where they can interact with other sports enthusiasts, participate in virtual sports events,
+                                        and explore a range of sports-related activities.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about_contents2">
+                        <ul>
+                            <li class="about_content2-list">
+                                <div class="about_content2-inner ">
+                                    <div class="about_tab_img">
+
+                                        <img src="/asset/imgs/about/voting.png" alt="voting">
+
+                                    </div>
+                                    <div class="about_tab_text">
+                                        <h3>Voting Sports Game</h3>
+                                        <p>Users can predict and enjoy sports game results while earning profits. By participating in voting, they can
+                                            leverage their sports knowledge and make accurate predictions to win rewards.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="about_content2-list">
+                                <div class="about_content2-inner ">
+                                    <div class="about_tab_img">
+                                        <img src="/asset/imgs/about/burnning.png" alt="burnning">
+                                    </div>
+                                    <div class="about_tab_text">
+                                        <h3>Burning Calorie</h3>
+                                        <p>This feature allows users to earn profits by engaging in active calorie-burning activities. By tracking
+                                            their physical activities and achieving fitness goals, users can earn rewards based on their performance.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="about_content2-list">
+                                <div class="about_content2-inner ">
+                                    <div class="about_tab_img">
+                                        <img src="/asset/imgs/about/playing.png" alt="playing">
+                                    </div>
+                                    <div class="about_tab_text">
+                                        <h3>Playing Sports Game</h3>
+                                        <p>Users can access a wide range of simple yet diverse sports games designed to provide entertainment and
+                                            revenue opportunities. Users can compete against others, improve their skills, and earn rewards based on
+                                            their performance.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="about_content2-list">
+                                <div class="about_content2-inner ">
+                                    <div class="about_tab_img">
+                                        <img src="/asset/imgs/about/connecting.png" alt="connecting">
+                                    </div>
+                                    <div class="about_tab_text">
+                                        <h3>Connecting Sports Metaverse</h3>
+                                        <p>PIXER provides a metaverse that bridges offline and online sports experiences. Users can immerse themselves
+                                            in a virtual world where they can interact with other sports enthusiasts, participate in virtual sports
+                                            events, and explore a range of sports-related activities.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="nft" id="nft">
+                <div class="container">
+                    <div class="nft_wrap">
+                        <div class="nft_title common_title title-animation">
+                            <div class="head">
+                                <h3>NFT</h3>
+                                <h3>CHARACTERS</h3>
+                            </div>
+                            <p class="text-line">
+                                <span>NFT CHARACTERS</span>
+                                <span>NFT CHARACTERS</span>
+                                <span>NFT CHARACTERS</span>
+                                <span>NFT CHARACTERS</span>
+                            </p>
+                        </div>
+                        <div class="nft_tab">
+                            <div class="tab_slider swiper-wrapper">
+                                <div data-nft-tab="all" class="tab_slide active swiper-slide">
+                                    <div class="nft_tab-inner">
+                                        <span>ALL</span>
+                                    </div>
+                                </div>
+                                <div data-nft-tab="golf" class="tab_slide swiper-slide">
+                                    <div class="nft_tab-inner">
+                                        <span>GOLF</span>
+                                    </div>
+                                </div>
+                                <div data-nft-tab="basketball" class="tab_slide swiper-slide">
+                                    <div class="nft_tab-inner">
+                                        <span>BASKETBALL</span>
+                                    </div>
+                                </div>
+                                <div data-nft-tab="baseball" class="tab_slide swiper-slide">
+                                    <div class="nft_tab-inner">
+                                        <span>BASEBALL</span>
+                                    </div>
+                                </div>
+                                <div data-nft-tab="soccer" class="tab_slide swiper-slide">
+                                    <div class="nft_tab-inner">
+                                        <span>SOCCER</span>
+                                    </div>
+                                </div>
+                                <div data-nft-tab="tennis" class="tab_slide swiper-slide">
+                                    <div class="nft_tab-inner">
+                                        <span>TENNIS</span>
+                                    </div>
+                                </div>
+
+                                <div data-nft-tab="hockey" class="tab_slide swiper-slide">
+                                    <div class="nft_tab-inner">
+                                        <span>HOCKEY</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nft_cotents_wrap">
+                            <div class="nft_cotents">
+                                <div class="nft_contents_slider active">
+                                    <div class="nft_contents_slide-wrapper swiper-wrapper">
+
+                                    </div>
+                                    <div class="nft_contents_prev"></div>
+                                    <div class="nft_contents_next"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tokens" id="tokens">
+                <div class="container">
+                    <div class="tokens_wrap">
+                        <div class="tokens_title common_title title-animation">
+                            <h3>TOKENS</h3>
+                            <h3>UTILITIES</h3>
+                            <p class="text-line">
+                                <span>TOKENS UTILITIES</span>
+                                <span>TOKENS UTILITIES</span>
+                                <span>TOKENS UTILITIES</span>
+                                <span>TOKENS UTILITIES</span>
+                            </p>
+
+                        </div>
+                        <div class="tokens_contents">
+                            <div class="tokens_content">
+                                <div class="tokens_img">
+                                    <img src="/asset/imgs/icons/start-blue.png" alt="token_star" class="token_star token_star-1">
+                                    <img src="/asset/imgs/icons/start-blue.png" alt="token_star" class="token_star token_star-2">
+                                    <img src="/asset/imgs/icons/start-blue.png" alt="token_star" class="token_star token_star-3">
+                                    <img src="/asset/imgs/icons/start-blue.png" alt="token_star" class="token_star token_star-4">
+                                    <img src="/asset/imgs/icons/start-blue.png" alt="token_star" class="token_star token_star-5">
+                                    <img src="/asset/imgs/pxp.png" alt="pxp" class="token_img">
+                                    <div class="tokens_line1">
+                                        <div></div>
+                                    </div>
+                                    <div class="tokens_line2">
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="tokens_text">
+                                    <h4>PXP</h4>
+                                    <ul>
+                                        <li><img src="/asset/imgs/icons/start-blue.png" alt="GOVERNANCE"><span>GOVERNANCE</span></li>
+                                        <li><img src="/asset/imgs/icons/start-blue.png" alt="MINT"><span>MINT</span></li>
+                                        <li><img src="/asset/imgs/icons/start-blue.png" alt="LEVEL UP"><span>LEVEL UP</span></li>
+                                        <li><img src="/asset/imgs/icons/start-blue.png" alt="PURCHASES"><span>PURCHASES</span></li>
+                                        <li><img src="/asset/imgs/icons/start-blue.png" alt="PAY FEE"><span>PAY FEE</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tokens_content">
+                                <div class="tokens_img">
+                                    <img src="/asset/imgs/icons/start-green.png" alt="token_star" class="token_star token_star-1">
+                                    <img src="/asset/imgs/icons/start-green.png" alt="token_star" class="token_star token_star-2">
+                                    <img src="/asset/imgs/icons/start-green.png" alt="token_star" class="token_star token_star-3">
+                                    <img src="/asset/imgs/icons/start-green.png" alt="token_star" class="token_star token_star-4">
+                                    <img src="/asset/imgs/icons/start-green.png" alt="token_star" class="token_star token_star-5">
+                                    <img src="/asset/imgs/plp.png" alt="plp" class="token_img">
+                                    <div class="tokens_line1 color-green">
+                                        <div></div>
+                                    </div>
+                                    <div class="tokens_line2 color-green">
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="tokens_text">
+                                    <h4 class="color-green">PLP</h4>
+                                    <ul class="color-green">
+                                        <li><img src="/asset/imgs/icons/start-green.png" alt="UTILITY"><span>UTILITY</span></li>
+                                        <li><img src="/asset/imgs/icons/start-green.png" alt="MINT / VOTE"><span>MINT / VOTE</span></li>
+                                        <li><img src="/asset/imgs/icons/start-green.png" alt="LEVEL UP"><span>LLEVEL UP</span></li>
+                                        <li><img src="/asset/imgs/icons/start-green.png" alt="PURCHSES"><span>PURCHSES</span></li>
+                                        <li><img src="/asset/imgs/icons/start-green.png" alt="TRANSACTION FEE"><span>TRANSACTION FEE</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="team" id="team">
+                <div class="container">
+                    <div class="team_wrap">
+                        <div class="team_title common_title title-animation">
+                            <div class="head">
+                                <h3>OUR</h3>
+                                <h3>TEAM</h3>
+                            </div>
+                            <p class="text-line">
+                                <span>OUR TEAM</span>
+                                <span>OUR TEAM</span>
+                                <span>OUR TEAM</span>
+                                <span>OUR TEAM</span>
+                            </p>
+                        </div>
+                        <div class="team_slider">
+                            <ul class="team_contents swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <div class="team_img"><img src="/asset/imgs/team/Team_01.png" alt="team"></div>
+                                    <div class="text_data">
+                                        <div class="text_data_wrap">
+                                            <h4>OLEG KLYMENKO</h4>
+                                            <span>CO-FOUNDER</span>
+                                            <ul class="team_sns">
+                                                <li><a href=""><img src="/asset/imgs/icons/linked_in.png" alt="linked_in"></a></li>
+                                                <li><a href=""><img src="/asset/imgs/icons/twitter.png" alt="twitter"></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="team_img"><img src="/asset/imgs/team/Team_02.png" alt="team"></div>
+                                    <div class="text_data">
+                                        <div class="text_data_wrap">
+                                            <h4>ANTOINE K</h4>
+                                            <span>CO-FOUNDER <br> & VP</span>
+                                            <ul class="team_sns">
+                                                <li><a href=""><img src="/asset/imgs/icons/linked_in.png" alt="linked_in"></a></li>
+                                                <li><a href=""><img src="/asset/imgs/icons/twitter.png" alt="twitter"></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="team_img"><img src="/asset/imgs/team/Team_03.png" alt="team"></div>
+                                    <div class="text_data">
+                                        <div class="text_data_wrap">
+                                            <h4>ALEKSANDER</h4>
+                                            <span>BUSINESS<br>DIRECTOR</span>
+                                            <ul class="team_sns">
+                                                <li><a href=""><img src="/asset/imgs/icons/linked_in.png" alt="linked_in"></a></li>
+                                                <li><a href=""><img src="/asset/imgs/icons/twitter.png" alt="twitter"></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="team_img"><img src="/asset/imgs/team/Team_04.png" alt="team"></div>
+                                    <div class="text_data">
+                                        <div class="text_data_wrap">
+                                            <h4>MICHAEL<br>EBERHARDT</h4>
+                                            <span>CTO</span>
+                                            <ul class="team_sns">
+                                                <li><a href=""><img src="/asset/imgs/icons/linked_in.png" alt="linked_in"></a></li>
+                                                <li><a href=""><img src="/asset/imgs/icons/twitter.png" alt="twitter"></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="team_img"><img src="/asset/imgs/team/Team_05.png" alt="team"></div>
+                                    <div class="text_data">
+                                        <div class="text_data_wrap">
+                                            <h4>OLEG KLYMENKO</h4>
+                                            <span>CO-FOUNDER</span>
+                                            <ul class="team_sns">
+                                                <li><a href=""><img src="/asset/imgs/icons/linked_in.png" alt="linked_in"></a></li>
+                                                <li><a href=""><img src="/asset/imgs/icons/twitter.png" alt="twitter"></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="team_img"><img src="/asset/imgs/team/Team_06.png" alt="team"></div>
+                                    <div class="text_data">
+                                        <div class="text_data_wrap">
+                                            <h4>OLEG KLYMENKO</h4>
+                                            <span>CO-FOUNDER</span>
+                                            <ul class="team_sns">
+                                                <li><a href=""><img src="/asset/imgs/icons/linked_in.png" alt="linked_in"></a></li>
+                                                <li><a href=""><img src="/asset/imgs/icons/twitter.png" alt="twitter"></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="team_img"><img src="/asset/imgs/team/Team_07.png" alt="team"></div>
+                                    <div class="text_data">
+                                        <div class="text_data_wrap">
+                                            <h4>OLEG KLYMENKO</h4>
+                                            <span>CO-FOUNDER</span>
+                                            <ul class="team_sns">
+                                                <li><a href=""><img src="/asset/imgs/icons/linked_in.png" alt="linked_in"></a></li>
+                                                <li><a href=""><img src="/asset/imgs/icons/twitter.png" alt="twitter"></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="team_navi">
+                                <div class="team_prev"></div>
+                                <div class="team_next"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="roadmap" id="roadmap">
+                <div class="container">
+                    <div class="roadmap_wrap">
+                        <div class="roadmap_title common_title title-animation">
+                            <div class="head">
+                                <h3>ROAD</h3>
+                                <h3>MAP</h3>
+                            </div>
+                            <p class="text-line">
+                                <span>ROAD MAP</span>
+                                <span>ROAD MAP</span>
+                                <span>ROAD MAP</span>
+                                <span>ROAD MAP</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="roadmap_contents">
+                        <div class="roadmap_pagination_wrap">
+                            <div class="roadmap_pagination_inner">
+                                <div class="side_btn start">
+                                    <img src="/asset/imgs/icons/side.png" alt="start">
+                                    <span>START!</span>
+                                </div>
+                                <div class="roadmap_pagination"></div>
+                                <div class="side_btn continue">
+                                    <span>TO BE <br>
+                                        CONTINUED!</span>
+                                    <img src="/asset/imgs/icons/side.png" alt="continue">
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="roadmap_slider swiper-wrapper">
+                            <li class="swiper-slide">
+                                <div class="roadmap_inner">
+                                    <h3>2021</h3>
+                                    <div class="roadmap_date">
+                                        <h4>Q1-Q4</h4>
+                                        <p>Built the core team, and initiated the project of PIXER ETERNITY
+                                            Sports To Earn research and launch of PIXER ETERNITY PROJECT
+                                            Established partnership with Binance smart chain, Polygon, Solana and other major publichains</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="roadmap_inner">
+                                    <h3>2022</h3>
+                                    <div class="roadmap_date">
+                                        <h4>Q1-Q4</h4>
+                                        <p>Built PIXER community and operations plan
+                                            Partnership with the world famous football player ROBIN VAN PERSIE
+                                            Design platform, Architecture and smart contracts
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="roadmap_inner">
+                                    <h3>2023</h3>
+                                    <div class="roadmap_date">
+                                        <h4>Q1-Q4</h4>
+                                        <p>PXT Listed on MEXC Global
+                                            PIXER Platform planning and development
+                                            PIXER Platform Beta Test and Collect user feedback and improve functions
+                                            Sports content production and affiliate partnership negotiations
+                                            Additional listing on Global Exchange</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="roadmap_inner">
+                                    <h3>2024</h3>
+                                    <div class="roadmap_date">
+                                        <h4>Q1-Q4</h4>
+                                        <p>PIXER platform official launch
+                                            Produce additional sports content and expand partnerships
+                                            Initial user recruitment and strengthening of marketing activities
+                                            Working on updates to enhance the stability and security of PIXER platform
+                                            Additional listing on Global Exchange
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="roadmap_inner">
+                                    <h3>2025</h3>
+                                    <div class="roadmap_date">
+                                        <h4>Q1-Q4</h4>
+                                        <p>Upgrade to expand Pixerpia sports content ecosystem
+                                            Production and collaboration to diversify sports contents and improve quality
+                                            Upgrade progress for PIXER metaverse
+                                            Additional listing on Global Exchange</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="partners" id="partners">
+                <div class="container">
+                    <div class="partners_wrap">
+                        <div class="partners_title common_title title-animation">
+                            <div class="head">
+                                <h3>OUR</h3>
+                                <h3>PARTNERS</h3>
+                            </div>
+                            <p class="text-line">
+                                <span>OUR PARTNERS</span>
+                                <span>OUR PARTNERS</span>
+                                <span>OUR PARTNERS</span>
+                                <span>OUR PARTNERS</span>
+                            </p>
+                        </div>
+                        <div class="partners_contents">
+                            <div class="partners_line_wrap">
+                                <ul class="partners_ul">
+                                    <li><img src="/asset/imgs/partners/BinanceSmartChain.png" alt="BinanceSmartChain"></li>
+                                    <li><img src="/asset/imgs/partners/Polygon.png" alt="Polygon"></li>
+                                    <li><img src="/asset/imgs/partners/Polystarter.png" alt="Polystarter"></li>
+                                    <li><img src="/asset/imgs/partners/Polygon_Studios.png" alt="Polygon_Studios"></li>
+                                    <li><img src="/asset/imgs/partners/vp.png" alt="vp"></li>
+                                    <li><img src="/asset/imgs/partners/freedom.png" alt="freedom"></li>
+                                </ul>
+                                <ul class="partners_ul">
+                                    <li><img src="/asset/imgs/partners/BinanceSmartChain.png" alt="BinanceSmartChain"></li>
+                                    <li><img src="/asset/imgs/partners/Polygon.png" alt="Polygon"></li>
+                                    <li><img src="/asset/imgs/partners/Polystarter.png" alt="Polystarter"></li>
+                                    <li><img src="/asset/imgs/partners/Polygon_Studios.png" alt="Polygon_Studios"></li>
+                                    <li><img src="/asset/imgs/partners/vp.png" alt="vp"></li>
+                                    <li><img src="/asset/imgs/partners/freedom.png" alt="freedom"></li>
+                                </ul>
+                                <ul class="partners_ul">
+                                    <li><img src="/asset/imgs/partners/BinanceSmartChain.png" alt="BinanceSmartChain"></li>
+                                    <li><img src="/asset/imgs/partners/Polygon.png" alt="Polygon"></li>
+                                    <li><img src="/asset/imgs/partners/Polystarter.png" alt="Polystarter"></li>
+                                    <li><img src="/asset/imgs/partners/Polygon_Studios.png" alt="Polygon_Studios"></li>
+                                    <li><img src="/asset/imgs/partners/vp.png" alt="vp"></li>
+                                    <li><img src="/asset/imgs/partners/freedom.png" alt="freedom"></li>
+                                </ul>
+                                <ul class="partners_ul">
+                                    <li><img src="/asset/imgs/partners/BinanceSmartChain.png" alt="BinanceSmartChain"></li>
+                                    <li><img src="/asset/imgs/partners/Polygon.png" alt="Polygon"></li>
+                                    <li><img src="/asset/imgs/partners/Polystarter.png" alt="Polystarter"></li>
+                                    <li><img src="/asset/imgs/partners/Polygon_Studios.png" alt="Polygon_Studios"></li>
+                                    <li><img src="/asset/imgs/partners/vp.png" alt="vp"></li>
+                                    <li><img src="/asset/imgs/partners/freedom.png" alt="freedom"></li>
+                                </ul>
+                            </div>
+                            <div class="partners_line_wrap">
+                                <ul class="partners_ul">
+                                    <li><img src="/asset/imgs/partners/MEXC_Global.png" alt="MEXC_Global"></li>
+                                    <li><img src="/asset/imgs/partners/gateio.png" alt="gateio"></li>
+                                    <li><img src="/asset/imgs/partners/Huobi_Token.png" alt="Huobi_Token"></li>
+                                    <li><img src="/asset/imgs/partners/Cointelegraph.png" alt="Cointelegraph"></li>
+                                    <li><img src="/asset/imgs/partners/trustfi.png" alt="trustfi"></li>
+                                    <li><img src="/asset/imgs/partners/freedom.png" alt="freedom"></li>
+                                </ul>
+                                <ul class="partners_ul">
+                                    <li><img src="/asset/imgs/partners/MEXC_Global.png" alt="MEXC_Global"></li>
+                                    <li><img src="/asset/imgs/partners/gateio.png" alt="gateio"></li>
+                                    <li><img src="/asset/imgs/partners/Huobi_Token.png" alt="Huobi_Token"></li>
+                                    <li><img src="/asset/imgs/partners/Cointelegraph.png" alt="Cointelegraph"></li>
+                                    <li><img src="/asset/imgs/partners/trustfi.png" alt="trustfi"></li>
+                                    <li><img src="/asset/imgs/partners/freedom.png" alt="freedom"></li>
+                                </ul>
+                                <ul class="partners_ul">
+                                    <li><img src="/asset/imgs/partners/MEXC_Global.png" alt="MEXC_Global"></li>
+                                    <li><img src="/asset/imgs/partners/gateio.png" alt="gateio"></li>
+                                    <li><img src="/asset/imgs/partners/Huobi_Token.png" alt="Huobi_Token"></li>
+                                    <li><img src="/asset/imgs/partners/Cointelegraph.png" alt="Cointelegraph"></li>
+                                    <li><img src="/asset/imgs/partners/trustfi.png" alt="trustfi"></li>
+                                    <li><img src="/asset/imgs/partners/freedom.png" alt="freedom"></li>
+                                </ul>
+                                <ul class="partners_ul">
+                                    <li><img src="/asset/imgs/partners/MEXC_Global.png" alt="MEXC_Global"></li>
+                                    <li><img src="/asset/imgs/partners/gateio.png" alt="gateio"></li>
+                                    <li><img src="/asset/imgs/partners/Huobi_Token.png" alt="Huobi_Token"></li>
+                                    <li><img src="/asset/imgs/partners/Cointelegraph.png" alt="Cointelegraph"></li>
+                                    <li><img src="/asset/imgs/partners/trustfi.png" alt="trustfi"></li>
+                                    <li><img src="/asset/imgs/partners/freedom.png" alt="freedom"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="exchanges" id="exchanges">
+                <div class="container">
+                    <div class="exchanges_wrap">
+                        <div class="exchange_title common_title title-animation">
+                            <div class="head">
+                                <h3>OUR</h3>
+                                <h3>EXCHANGES</h3>
+                            </div>
+                            <p class="text-line">
+                                <span>OUR EXCHANGES</span>
+                                <span>OUR EXCHANGES</span>
+                                <span>OUR EXCHANGES</span>
+                                <span>OUR EXCHANGES</span>
+                            </p>
+                        </div>
+                        <div class="exchanges_contents">
+                            <div class="exchanges_line_wrap">
+                                <ul class="exchanges_ul">
+                                    <li><a href="https://www.mexc.com/ko-KR/exchange/PXT_USDT" target="_black" rel="noreferrer noopener nofollow"><img
+                                                src=" /asset/imgs/partners/MEXC_Global.png" alt="BinanceSmartChain"></a></li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="banner">
+                <div class="banner_bg"></div>
+                <div class="container">
+                    <div class="banner_wrap">
+                        <h3>JOIN OUR <br>
+                            COMMUNITY</h3>
+                        <p>Pixer Eternity is a multi-functional platform for all users, including Voting Sports<br>
+                            Game, Burning Calorie, Playing Sports Game, Connecting Sports Metaverse.</p>
+                        <a href="https://discord.com/invite/pixereternity" rel="noopener noreferrer nofollow" target="_blank"><span>Explore
+                                now</span></a>
+                    </div>
+                </div>
+            </section>
         </main>
-        <footer></footer>
+        <footer>
+            <div class="container">
+                <div class="footer_wrap">
+                    <ul class="footer_nav">
+                        <li><a onclick="scrollToSection(event,'start')" href="#">START</a></li>
+                        <li><a onclick="scrollToSection(event,'about')" href="#">ABOUT US</a></li>
+                        <li><a onclick="scrollToSection(event,'nft')" href="#">NFT</a></li>
+                        <li><a onclick="scrollToSection(event,'tokens')" href="#">TOKENS</a></li>
+                        <li><a onclick="scrollToSection(event,'team')" href="#">TEAM</a></li>
+                        <li><a onclick="scrollToSection(event,'roadmap')" href="#">ROADMAP</a></li>
+                        <li><a onclick="scrollToSection(event,'partners')" href="#">PARTNERS</a></li>
+                        <li><a onclick="scrollToSection(event,'exchanges')" href="#">EXCHANGES</a></li>
+                    </ul>
+                    <ul class="footer_sns">
+                        <li>
+                            <a href="https://t.me/PixerEternity" rel="nofollow noopener noreferrer" target="_blank"><img
+                                    src="/asset/imgs/icons/sns/1.png" alt="telegram"></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/PixerEternity" rel="nofollow noopener noreferrer" target="_blank"><img
+                                    src="/asset/imgs/icons/sns/2.png" alt="twitter"></a>
+                        </li>
+                        <li>
+                            <a href="http://discord.gg/pixereternity" rel="nofollow noopener noreferrer" target="_blank"><img
+                                    src="/asset/imgs/icons/sns/3.png" alt="discord"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/@pixereternity" rel="nofollow noopener noreferrer" target="_blank"><img
+                                    src="/asset/imgs/icons/sns/4.png" alt="youtube"></a>
+                        </li>
+                        <li>
+                            <a href="https://medium.com/@pixereternity" rel="nofollow noopener noreferrer" target="_blank"><img
+                                    src="/asset/imgs/icons/sns/5.png" alt="medium"></a>
+                        </li>
+                    </ul>
+                    <ul class="footer_download" id="appDownload">
+                        <li><a href=""><img src="/asset/imgs/appstore.png" alt="appstore" /></a></li>
+                        <li><a href=""><img src="/asset/imgs/playstore.png" alt="playstore" /></a></li>
+                    </ul>
+                    <ul class="copyright">
+                        <li><span>Contact : <a href="mailTo:official@pixer.club">official@pixer.club</a></span></li>
+                        <li><span>COPYRIGHT©2023 PIXER. All Right Reserved.</span></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Observer.min.js"></script>
+    <script src="/asset/js/nft.js"></script>
     <script src="/asset/js/script.js"></script>
 </body>
 
