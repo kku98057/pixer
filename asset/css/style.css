@@ -722,7 +722,7 @@ header {
   width: 48px;
   height: 48px;
   background-color: red;
-  background: url(./asset/imgs/icons/arrow.png) no-repeat center/contain;
+  background: url(../../asset/imgs/icons/arrow.png) no-repeat center/contain;
   z-index: 3;
   position: absolute;
 }
@@ -1024,7 +1024,7 @@ header {
 .team_next {
   width: 48px;
   height: 48px;
-  background: url(./asset/imgs/icons/arrow.png) no-repeat center/contain;
+  background: url(../../asset/imgs/icons/arrow.png) no-repeat center/contain;
 
   border: 1px solid var(--color-text1);
   border-radius: 50px;
@@ -1429,7 +1429,7 @@ footer .container {
 /* circles */
 .roadmap:after {
   content: "";
-  background: url("./asset/imgs/circle-green.png") no-repeat center/contain;
+  background: url("../../asset/imgs/circle-green.png") no-repeat center/contain;
   position: absolute;
   top: 40%;
   right: 0%;
@@ -1441,7 +1441,7 @@ footer .container {
 }
 .team:after {
   content: "";
-  background: url("./asset/imgs/circle-green.png") no-repeat center/contain;
+  background: url("../../asset/imgs/circle-green.png") no-repeat center/contain;
   position: absolute;
   top: 0;
   left: 50%;
@@ -1453,7 +1453,7 @@ footer .container {
 }
 .team:before {
   content: "";
-  background: url("./asset/imgs/circle-blue.png") no-repeat center/contain;
+  background: url("../../asset/imgs/circle-blue.png") no-repeat center/contain;
   position: absolute;
   bottom: 0%;
   right: 0%;
@@ -1465,7 +1465,7 @@ footer .container {
 }
 .tokens:after {
   content: "";
-  background: url("./asset/imgs/circle-blue.png") no-repeat center/contain;
+  background: url("../../asset/imgs/circle-blue.png") no-repeat center/contain;
   position: absolute;
   top: 0;
   left: 50%;
@@ -1477,7 +1477,7 @@ footer .container {
 }
 .tokens:before {
   content: "";
-  background: url("./asset/imgs/circle-green.png") no-repeat center/contain;
+  background: url("../../asset/imgs/circle-green.png") no-repeat center/contain;
   position: absolute;
   bottom: 0%;
   right: 0%;
@@ -1489,7 +1489,7 @@ footer .container {
 }
 .nft:after {
   content: "";
-  background: url("./asset/imgs/circle-green.png") no-repeat center/contain;
+  background: url("../../asset/imgs/circle-green.png") no-repeat center/contain;
   position: absolute;
   top: 10%;
   left: 50%;
@@ -1501,7 +1501,7 @@ footer .container {
 }
 .about:after {
   content: "";
-  background: url("./asset/imgs/circle-blue.png") no-repeat center/contain;
+  background: url("../../asset/imgs/circle-blue.png") no-repeat center/contain;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1513,7 +1513,7 @@ footer .container {
 }
 .vid:after {
   content: "";
-  background: url("./asset/imgs/circle-blue.png") no-repeat center/contain;
+  background: url("../../asset/imgs/circle-blue.png") no-repeat center/contain;
   position: absolute;
   bottom: 0;
   left: 0%;
@@ -1525,7 +1525,7 @@ footer .container {
 }
 .sports:after {
   content: "";
-  background: url("./asset/imgs/circle-green.png") no-repeat center/contain;
+  background: url("../../asset/imgs/circle-green.png") no-repeat center/contain;
   position: absolute;
   top: 0;
   left: 50%;
@@ -1537,7 +1537,7 @@ footer .container {
 }
 .partners:after {
   content: "";
-  background: url("./asset/imgs/circle-blue.png") no-repeat center/contain;
+  background: url("../../asset/imgs/circle-blue.png") no-repeat center/contain;
   position: absolute;
   top: 50%;
   left: 20%;
@@ -1953,7 +1953,7 @@ footer .container {
     width: 100%;
     position: absolute;
     top: 0;
-    background: url(./asset/imgs/banner_img.png) no-repeat;
+    background: url(../../asset/imgs/banner_img.png) no-repeat;
     background-size: cover;
     background-position-x: 10%;
   } */
