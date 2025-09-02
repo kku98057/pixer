@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/asset/css/reset.css">
+    <link rel="stylesheet" href="/asset/css/common.css">
+    <link rel="stylesheet" href="/asset/css/roulette.css">
+    <title>PIXER - Roulette</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="roulette_game">
+            <!-- 룰렛게임 -->
+            <div class="game">
+                <div class="panel">
+                    <div class="pin"><img src="../asset/imgs/pin.png" alt="pin" /></div>
+                    <div class="game-bg">
+                        <div class="rouletter-wacu">
+                            <img src="../asset/imgs/roulette.png" alt="roulette" />
+                        </div>
+                    </div>
+                    <div class="rouletter-arrow"></div>
+                    <button type="button" class="startBtn2 spin-btn">
+                        <img src="/asset/imgs/start_bt.png" alt=""></button>
+                </div>
+            </div>
+            <span>남은 룰렛 돌리기 찬스 <span class="chance">1</span>회</span>
+            <button class="startBtn spin-btn" type="button">
+                <span>룰렛 돌리기 </span>
+            </button>
+        </div>
+        <div class="popup">
+            <div class="popup_wrap">
+                <h3>룰렛권을 모두 소진하셨네요!<br>
+                    다양한 이벤트로 룰렛권을 획득 하세요!</h3>
+                <button type="button" class="confirm_btn"><span>확인</span></button>
+            </div>
+        </div>
+        <div class="popup2">
+            <div class="popup_wrap">
+
+            </div>
+        </div>
+    </div>
+    <script src="
+    https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js
+    "></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/asset/js/roulette.js"></script>
+</body>
+
+</html>

@@ -144,7 +144,7 @@ const roadmapSlider = new Swiper(".roadmap_contents", {
   slidesPerView: "auto",
   centeredSlides: true,
   spaceBetween: 40,
-  initialSlide: 2,
+  initialSlide: 3,
   loop: true,
   pagination: {
     el: ".roadmap_pagination",
@@ -167,75 +167,62 @@ const roadmapSlider = new Swiper(".roadmap_contents", {
   },
 });
 
-window.addEventListener("load", () => {
-  const marquees = document.querySelectorAll(".partners_line_wrap");
-  marquees.forEach((marquee) => {
-    let acc = 1;
-    let acc2 = 1;
-    let initialX = 0;
-    let initialX2 = 0;
-    let width = marquee.getBoundingClientRect().width + 80;
-    let enter = false;
-    let enter2 = false;
-    window.addEventListener("resize", () => {
-      if (window.matchMedia("(max-width:768px)").matches) {
-        width = marquee.getBoundingClientRect().width + 20;
-      }
-    });
-
-    const move = () => {
-      marquees[0].style.transform = `translate(-${(initialX += acc)}px,0)`;
-      marquees[1].style.transform = `translate(${(initialX2 += acc2)}px,0)`;
-      if (initialX >= width / 4) {
-        initialX = 0;
-      }
-      if (initialX2 >= width / 4) {
-        initialX2 = 0;
-      }
-      requestAnimationFrame(move);
-    };
-
-    marquees[0].addEventListener("mouseenter", () => {
-      if (!enter) {
-        acc = 0.5;
-        enter = true;
-      }
-      console.log(acc, acc2);
-    });
-    marquees[0].addEventListener("mouseleave", () => {
-      if (enter) {
-        acc = 1;
-        enter = false;
-      }
-      console.log(acc, acc2);
-    });
-    marquees[1].addEventListener("mouseenter", () => {
-      if (!enter2) {
-        acc2 = 0.5;
-        enter2 = true;
-      }
-      console.log(acc, acc2);
-    });
-    marquees[1].addEventListener("mouseleave", () => {
-      if (enter2) {
-        acc2 = 1;
-        enter2 = false;
-      }
-      console.log(acc, acc2);
-    });
-    move();
+const marquees = document.querySelectorAll(".partners_line_wrap");
+marquees.forEach((marquee) => {
+  let acc = 1.2;
+  let acc2 = 0.8;
+  let initialX = 0;
+  let initialX2 = 0;
+  let width = marquee.getBoundingClientRect().width + 80;
+  let enter = false;
+  let enter2 = false;
+  window.addEventListener("resize", () => {
+    if (window.matchMedia("(max-width:768px)").matches) {
+      width = marquee.getBoundingClientRect().width + 20;
+    }
   });
-  loadingAni();
-  sportsAni();
-  vidAni();
-  characterAni();
-  tokensAni();
-  teamAni();
-  roadmapAni();
-  partnerAni();
-  exchangeAni();
-  bannerAni();
-  commonTitleAni();
+
+  const move = () => {
+    marquees[0].style.transform = `translate(-${(initialX += acc)}px,0)`;
+    marquees[1].style.transform = `translate(${(initialX2 += acc2)}px,0)`;
+    if (initialX >= width / 4) {
+      initialX = 0;
+    }
+    if (initialX2 >= width / 4) {
+      initialX2 = 0;
+    }
+    requestAnimationFrame(move);
+  };
+
+  marquees[0].addEventListener("mouseenter", () => {
+    if (!enter) {
+      acc = 0.5;
+      enter = true;
+    }
+    console.log(acc, acc2);
+  });
+  marquees[0].addEventListener("mouseleave", () => {
+    if (enter) {
+      acc = 1.2;
+      enter = false;
+    }
+    console.log(acc, acc2);
+  });
+  marquees[1].addEventListener("mouseenter", () => {
+    if (!enter2) {
+      acc2 = 0.4;
+      enter2 = true;
+    }
+    console.log(acc, acc2);
+  });
+  marquees[1].addEventListener("mouseleave", () => {
+    if (enter2) {
+      acc2 = 0.8;
+      enter2 = false;
+    }
+    console.log(acc, acc2);
+  });
+  move();
 });
 
 const pixerVid = document.querySelector(".vid_video video");
@@ -507,22 +494,21 @@ const sportsAni = () => {
           opacity: 0,
         });
       const sportsTexts = gsap.utils.toArray(".sport_text p");
-      sportsTexts.forEach((text) => {
-        const tl = gsap
-          .timeline({
-            scrollTrigger: {
-              trigger: text,
-              start: "0 70%",
-              toggleActions: "play reverse play reverse",
-            },
-          })
-          .from(text, {
-            yPercent: 10,
-            opacity: 0,
-            duration: 1,
-            ease: "power4.inout",
-          });
-      });
+
+      const tl2 = gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: ".sport_text p",
+            start: "0 70%",
+            toggleActions: "play reverse play reverse",
+          },
+        })
+        .from(".sport_text p", {
+          yPercent: 10,
+          opacity: 0,
+          duration: 1,
+          ease: "power4.inout",
+        });
     },
   });
 };
@@ -1142,30 +1128,17 @@ const commonTitleAni = () => {
     },
   });
 };
-
-const imgs = document.querySelectorAll(".nft_contents_slider img");
-let totalImg = 0;
-
-function checkAllImagesLoaded() {
-  if (imgs.length === totalImg) {
-    const sliders = document.querySelectorAll(".nft_contents_slider");
-    sliders.forEach((slide) => {
-      slide.style.display = "none";
-    });
-  }
-}
-
-imgs.forEach((img) => {
-  if (img.complete) {
-    totalImg++;
-    checkAllImagesLoaded();
-  } else {
-    img.addEventListener("load", () => {
-      totalImg++;
-      checkAllImagesLoaded();
-    });
-  }
-});
+loadingAni();
+commonTitleAni();
+sportsAni();
+vidAni();
+characterAni();
+tokensAni();
+teamAni();
+roadmapAni();
+partnerAni();
+exchangeAni();
+bannerAni();
 
 let hasRefreshed = false;
 let lastWidth = window.innerWidth;
